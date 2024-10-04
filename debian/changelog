@@ -1,0 +1,5 @@
+python-google-api-python-client (2.147.0-1) unstable; urgency=medium
+
+  * Initial release v2.147.0 (Closes: #1084498)
+
+ -- Dong Xu <me@eipi.fun>  Fri, 04 Oct 2024 21:59:13 +0800

@@ -1,0 +1,40 @@
+Source: python-google-api-python-client
+Section: python
+Priority: optional
+Maintainer: Home Assistant Team <team+homeassistant@tracker.debian.org>
+Uploaders:
+ Dong Xu <me@eipi.fun>,
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-python,
+ pybuild-plugin-pyproject,
+ openstack-pkg-tools,
+ python3-setuptools,
+ python3-all,
+ python3-google-api-core,
+ python3-google-auth,
+ python3-google-auth-httplib2,
+ python3-httplib2,
+ python3-uritemplate
+Build-Depends-Indep:
+ python3-pytest,
+ python3-parameterized
+Standards-Version: 4.7.0
+Testsuite: autopkgtest-pkg-pybuild
+Vcs-Browser: https://salsa.debian.org/homeassistant-team/deps/python-google-api-python-client
+Vcs-Git: https://salsa.debian.org/homeassistant-team/deps/python-google-api-python-client.git
+Homepage: https://github.com/googleapis/google-api-python-client/
+Rules-Requires-Root: no
+
+Package: python3-google-api-python-client
+Architecture: all
+Depends: ${python3:Depends}, ${misc:Depends}
+Description: Google API Client Library for Python - Python 3.x
+ This is the Google API Python client library for Google's discovery based APIs.
+ This library is considered complete and is in maintenance mode. This means that
+ we will address critical bugs and security issues but will not add any new
+ features. This library is officially supported by Google. However, the
+ maintainers of this repository recommend using Cloud Client Libraries for
+ Python, where possible, for new code development. For more information, please
+ visit Client Libraries Explained.
+ This package contains the Python 3.x module.
